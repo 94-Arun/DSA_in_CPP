@@ -1,20 +1,29 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <climits>
 using namespace std;
 
-int maxProfit(vector<int>& prices) {
-    int minPrice = INT_MAX;  // Track the minimum price seen so far
-    int maxProfit = 0;       // Track the maximum profit possible
+void maxProfit(int prices[],int n) {
+    int bestbuy[100000];
+    int maxprofit = 0;
+    bestbuy[0] = INT_MAX;
 
-    for (int price : prices) {
-        minPrice = min(minPrice, price);              // Update min price
-        maxProfit = max(maxProfit, price - minPrice); // Update max profit
+    for(int i = 1; i<n; i++){
+        bestbuy[i] = min(bestbuy[i-1],prices[i-1]); 
     }
 
-    return maxProfit;
+    for(int i = 0; i<n; i++){
+        int currprofit = prices[i] - bestbuy[i];
+        maxprofit = max(maxprofit,currprofit);
+    }
+    cout<<"Maximum Profit : "<<maxprofit<<endl;
+    
 }
 
 int main() {
-    vector<int> prices = {7, 1, 5, 3, 6, 4};
-    cout << "Maximum Profit: " << maxProfit(prices) << endl;
+    int prices[6] = {7,1,5,3,6,4};
+    int n = sizeof(prices)/sizeof(int);
+
+    maxProfit(prices,n);
+
     return 0;
 }
