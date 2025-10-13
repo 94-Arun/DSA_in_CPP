@@ -16,10 +16,10 @@ void printSubarrays(int arr[],int n){
 }
 
 int main(){
-    int arr[5];
-    for(int i = 0;i<5;i++){
+    int arr[10];
+    for(int i = 0;i<10;i++){
         cin>>arr[i];
     }
-    printSubarrays(arr,5);
+    printSubarrays(arr,10);
     return 0;
 }
