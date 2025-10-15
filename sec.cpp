@@ -11,7 +11,7 @@ int main() {
     double average = num1 + num2 + num3 / 3.0;
 
     // Displays the incorrect result
-    std::cout << "The average is: " << average << std::endl;
+    std::cout << "The average of the 3 Numbers Entered : " << average << std::endl;
 
     return 0;
 }
