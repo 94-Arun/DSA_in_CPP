@@ -4,20 +4,14 @@ using namespace std;
 // Insertion sort
 void InsertionSort(int arr[],int n){
 
-    for(int i = 0; i<n-1; i++){
-        int key = i;
-        for(int j = i+1; j<n; j++){
-            if(arr[j]<arr[i]){
-                key = j;
-                
-            }
-            int temp = arr[i];
-                arr[i] = arr[key];
-                arr[key] = temp;
+    for(int i = 1; i<n; i++){
+        int curr = arr[i];
+        int prev = i-1;
+        while(prev >= 0 && arr[prev] > curr){
+            swap(arr[prev],arr[prev+1]);
+            prev--;
         }
     }
-
-
 }
 
 int main(){
@@ -35,8 +29,4 @@ int main(){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
-}
-
-void Baagi4(){
-    cout<<"Akhand Chutiya Movie : "<<endl;
 }
