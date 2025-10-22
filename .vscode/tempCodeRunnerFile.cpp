@@ -1,0 +1,1 @@
+arr[min_index] = temp;
