@@ -14,7 +14,7 @@ void Count_sort(int arr[],int n){
         freq[arr[i]]++;
     }
 
-    // Step 2 - 
+    // Step 2 - O(range) = max - min
     for(int i=minval,j=0; i<=maxval; i++){
         while(freq[i] > 0){
             arr[j++] = i;
