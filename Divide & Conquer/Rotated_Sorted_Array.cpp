@@ -28,7 +28,7 @@ int search(vector<int> &arr,int target){
 
 int main(){
     vector <int> arr = {4,5,6,7,0,1,2};
-    int s = search(arr,1);
+    int s = search(arr,0);
     cout<<"Desired Index : "<< s <<endl;
     return 0;
 }
