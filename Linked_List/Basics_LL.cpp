@@ -60,7 +60,6 @@ public:
                 cout<<temp->data<<"->";
                 temp = temp->next;
             } 
-            free(temp);
             cout<<"NULL";
             cout<<endl;
             
@@ -109,11 +108,7 @@ public:
         temp->next = NULL;
         delete tail;
         tail = temp;
-
-
     }
-
-
 };
 
 
@@ -133,6 +128,7 @@ int main(){
     ll.display();
     // cout<<endl;
     ll.insert(10,3);
+    ll.insert(7,6);
     ll.display();
     ll.pop_front();
     ll.display();
