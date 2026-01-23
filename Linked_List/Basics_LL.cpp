@@ -39,6 +39,8 @@ public:
     //     }
     // }
     
+    // operations on linked list
+    
     void push_front(int data){
         Node* newnode = new Node(data);
 
