@@ -97,7 +97,8 @@ public:
             return ;
         }
 
-        // if todelete is head
+        // if the node is head
+        
         if(n == size){
             Node* temp = head;
             head = temp->next;
