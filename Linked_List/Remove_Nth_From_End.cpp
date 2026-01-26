@@ -98,7 +98,7 @@ public:
         }
 
         // if the node is head
-        
+
         if(n == size){
             Node* temp = head;
             head = temp->next;
@@ -127,6 +127,7 @@ int main(){
     ll.push_front(1);
     ll.push_back(4);
     ll.push_back(5);
+    ll.push_back(6);
     ll.push_back(6);
 
     ll.display();
