@@ -48,7 +48,7 @@ public:
         }
     }
 
-    void display(Node* head){
+    void display(){
         Node* temp = head;
         if(head == NULL) cout<<"Empty List:"<<endl;
         else{
@@ -62,33 +62,20 @@ public:
         }
     }
 
-Node* merge(Node* left , Node* right){
-    List ans;
-    Node* i = left;
-    Node* j = right;
+Node* merge(Node* i , Node* j){
 
-    while(i != NULL && j != NULL){
-        if(i->data <= j->data){
-            ans.push_back(i->data);
-            i = i->next;
-        }
-        else{
-            ans.push_back(j->data);
-            j = j->next;
-        }
-    }
-    
-    while(i != NULL){ 
-        ans.push_back(i->data);
-        i = i->next;
-    }
-    while(j != NULL){
-        ans.push_back(j->data);
-        j = j->next;
-    }    
+    if(!i) return j;
+    if(!j) return i;
 
-    return ans.head;
-}    
+    if(i->data <= j->data){
+        i->next = merge(i->next,j);
+        return i;
+    }else{
+        j->next = merge(i,j->next);
+        return j;
+    }
+
+}
 
 Node* splitmid(Node* head){
     Node* slow = head;
@@ -118,6 +105,23 @@ Node* mergeSort(Node* head){
 
     return merge(left,right);
 }
+
+// Fix tail at after the merge sort operation
+void sort(){
+    head = mergeSort(head);
+
+    if(!head){
+        tail = NULL;
+        return;
+    }
+
+    Node* temp = head;
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    tail = temp;
+}
+
 };
 
 
@@ -129,14 +133,12 @@ int main(){
     ll.push_front(0);
     ll.push_front(1);
     ll.push_front(2);
+    ll.push_front(3);
     ll.push_front(4);
-    ll.push_front(9);
-    ll.display(ll.head);
-    ll.head = ll.mergeSort(ll.head);
-    ll.display(ll.head);
+    ll.display();
+    ll.sort();
+    ll.display();
 
-    
-
-
+    return 0;
 }
  
