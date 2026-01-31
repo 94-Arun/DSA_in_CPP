@@ -101,7 +101,7 @@ public:
         temp->next = NULL;
         delete temp;
     }
-
+// this is the best way to pop back
     void pop_back(){
         Node* temp = head;
         while(temp->next != tail){
