@@ -97,7 +97,7 @@ public:
             return ;
         }
 
-        // if the node is head
+        // if the node is head node
 
         if(n == size){
             Node* temp = head;
