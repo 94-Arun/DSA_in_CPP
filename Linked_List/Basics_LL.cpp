@@ -93,7 +93,7 @@ public:
         newnode->next = temp->next;
         temp->next = newnode;   
     }
-
+// pop function to remove the first node
     void pop_front(){
         Node* temp = head;
         if(temp == NULL) cout<<"List Dosnt Exist";
