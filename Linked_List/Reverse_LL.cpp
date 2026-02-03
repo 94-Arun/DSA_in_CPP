@@ -54,6 +54,7 @@ public:
 
     }
 
+    // display function
     void display(){
         Node* temp = head;
         if(head == NULL) cout<<"Empty List:"<<endl;
