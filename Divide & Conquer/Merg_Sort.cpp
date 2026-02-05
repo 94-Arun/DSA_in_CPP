@@ -2,6 +2,7 @@
 using namespace std;
 #include<vector>
 
+// mereg sort
 void Merge(vector <int> &arr, int si, int mid, int ei){
     vector <int> temp;
     int i = si;
