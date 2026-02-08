@@ -3,6 +3,7 @@
 #include<stdexcept>
 using namespace std;
 
+// stock span program
 template<class T>
 class Stack{
     vector<T> vec;
