@@ -25,7 +25,7 @@ public:
         }
         return vec.back();
     }
-
+// to check if the stack is empty
     bool isEmpty(){
         return vec.empty();
     }
