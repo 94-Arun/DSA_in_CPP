@@ -92,7 +92,7 @@ public:
         int size = getSize();
 
         // For Invalid Position
-        if(n<0 || n>size){
+        if(n<1 || n>size){
             cout<<"Invalid Position";
             return ;
         }
