@@ -50,6 +50,8 @@ public:
     }
 };
 
+
+// Main function 
 int main(){
     vector<int> prices = {100,80,60,70,60,75,85};
     Stack<int> s;
