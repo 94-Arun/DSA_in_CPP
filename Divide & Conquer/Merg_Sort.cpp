@@ -2,7 +2,7 @@
 using namespace std;
 #include<vector>
 
-// mergr sort
+// merge sort
 void Merge(vector <int> &arr, int si, int mid, int ei){
     vector <int> temp;
     int i = si;
@@ -31,6 +31,7 @@ void Merge(vector <int> &arr, int si, int mid, int ei){
         }
 }    
 
+// merge sorted arrays
     void Merge_Sort(vector <int> &arr, int si, int ei){
     if (si >= ei)
         return;
