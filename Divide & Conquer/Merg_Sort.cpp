@@ -44,6 +44,7 @@ void Merge(vector <int> &arr, int si, int mid, int ei){
 
 }
 
+// merge sort main 
 int main(){
 
     vector<int> arr = {10,9,8,7,6,5,4,3,2,1,0};
