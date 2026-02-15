@@ -1,4 +1,4 @@
-# include<iostream>
+#include <iostream>
 using namespace std;
 
 // Print all subarrays of an array
@@ -14,9 +14,10 @@ void printSubarrays(int arr[],int n){
         cout<<endl;    
     }
 }
+// main function
 
 int main(){
-    int arr[10];
+    int arr[10] = {};
     for(int i = 0;i<10;i++){
         cin>>arr[i];
     }
