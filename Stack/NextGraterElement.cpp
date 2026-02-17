@@ -68,7 +68,7 @@ int main(){
     //     s.pop();
     // }
 
-    vector<int> arr = {6,8,0,1,2,3};
+    vector<int> arr = {6,8,0,1,2,2};
     vector<int> ans = {0,0,0,0,0,0};
     NextGrater(arr,ans);
 
