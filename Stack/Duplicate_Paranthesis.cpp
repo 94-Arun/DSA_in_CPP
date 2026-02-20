@@ -3,6 +3,7 @@
 #include<stack>
 using namespace std;
 
+// duplicate Parenthesis
 bool duplicateParanthesis(string str){
     stack<char> s;
     
