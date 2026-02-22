@@ -20,7 +20,7 @@ bool duplicateParanthesis(string str){
     return false;
 }
 
-// main
+// main function
 int main(){
     string str1 = "((a+b))";
     string str2 = "((a+b)+(a+b))";
