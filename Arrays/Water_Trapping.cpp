@@ -9,10 +9,10 @@ void WaterTrapped(int heightes[],int n){
     rightMax[n-1] =heightes[n-1];
 
     for(int i = 1;i<n;i++){
-        leftMax[i] = max(leftMax[i-1],heightes[i-1]);
+        leftMax[i] = max(leftMax[i-1],heightes[i]);
     }
     for(int i = n-2;i>=0;i--){
-        rightMax[i] = max(rightMax[i+1],heightes[i+1]);
+        rightMax[i] = max(rightMax[i+1],heightes[i]);
     }
 
     int watertrap = 0;
@@ -25,7 +25,7 @@ void WaterTrapped(int heightes[],int n){
     cout<<"Water Trapped : "<<watertrap<<endl;
 }
 int main(){
-    int heightes[7] = {4,2,0,6,3,2,5};
+    int heightes[6] = {4,2,0,3,2,5};
     int n = sizeof(heightes)/sizeof(int);
 
     WaterTrapped(heightes,n);
