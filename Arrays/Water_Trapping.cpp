@@ -2,7 +2,7 @@
 #include <climits>
 using namespace std;
 
-
+// water trapping
 void WaterTrapped(int heightes[],int n){
     int rightMax[20000];int leftMax[20000];
     leftMax[0] = heightes[0];
