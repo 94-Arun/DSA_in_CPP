@@ -24,6 +24,8 @@ void WaterTrapped(int heightes[],int n){
     }
     cout<<"Water Trapped : "<<watertrap<<endl;
 }
+
+// main function
 int main(){
     int heightes[6] = {4,2,0,3,2,5};
     int n = sizeof(heightes)/sizeof(int);
