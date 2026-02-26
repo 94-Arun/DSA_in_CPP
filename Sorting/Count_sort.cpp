@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+// count sort
 void Count_sort(int arr[],int n){
     int freq[100000] = {0};
     int minval = INT_MAX , maxval = INT_MIN;
