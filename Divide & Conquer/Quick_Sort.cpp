@@ -2,6 +2,7 @@
 using namespace std;
 #include<vector>
 
+// Quick Sort
 int Partion(vector<int> &arr, int si, int ei){
     int pivot = arr[ei];
     int i = si;
