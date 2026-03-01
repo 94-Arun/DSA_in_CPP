@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// premutation string
 void permutation(string str,string ans){
     int n = str.size();
     if(n==0){
