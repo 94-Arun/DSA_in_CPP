@@ -14,7 +14,7 @@ void printSubarrays(int arr[],int n){
         cout<<endl;    
     }
 }
-// main function
+// Main function
 
 int main(){
     int arr[10] = {};
