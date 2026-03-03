@@ -2,6 +2,8 @@
 #include<string>
 using namespace std;
 
+
+// oops basics
 class Car{
     string name;
     string colour;
