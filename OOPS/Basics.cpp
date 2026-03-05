@@ -14,7 +14,7 @@ public:
         name = nameVal;
         colour = colourVal;
     }
-
+    // Start method
     void start(){
         cout<<"Car is started:\n";
     }
@@ -34,7 +34,6 @@ int main(){
     Car c1("Virtus","Black");
     c1.start();
     c1.getname();
-
 
     return 0;
 }
