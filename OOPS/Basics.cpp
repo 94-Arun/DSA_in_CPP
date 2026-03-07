@@ -18,6 +18,7 @@ public:
     void start(){
         cout<<"Car is started:\n";
     }
+    // stop method
     void stop(){
         cout<<"Car is stopped :\n";
     }
