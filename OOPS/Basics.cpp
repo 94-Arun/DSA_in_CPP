@@ -3,7 +3,7 @@
 using namespace std;
 
 
-// oops basics
+// oops basics in c++
 class Car{
     string name;
     string colour;
@@ -18,7 +18,7 @@ public:
     void start(){
         cout<<"Car is started:\n";
     }
-    // stop method
+    
     void stop(){
         cout<<"Car is stopped :\n";
     }
