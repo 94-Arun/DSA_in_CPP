@@ -78,7 +78,7 @@ public:
             tail = newnode;
         }
     }
-// insert
+// insert function
     void insert(int val,int pos){
         Node* newnode = new Node(val);
         Node* temp = head;
