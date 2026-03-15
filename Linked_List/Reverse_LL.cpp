@@ -78,7 +78,7 @@ public:
             tail = newnode;
         }
     }
-// insert function
+// insert function is this isco
     void insert(int val,int pos){
         Node* newnode = new Node(val);
         Node* temp = head;
