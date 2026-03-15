@@ -82,7 +82,7 @@ public:
     void insert(int val,int pos){
         Node* newnode = new Node(val);
         Node* temp = head;
-
+       // for loop
         for(int i = 0;i<pos-1;i++){
             if(temp==NULL){
                 cout<<"Invalid Position:";
