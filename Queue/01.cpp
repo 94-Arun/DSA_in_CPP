@@ -68,7 +68,5 @@ int main(){
     cout<<"Deleted Element:"<<q.dequeue()<<endl;
     q.display();
 
-
-
     return 0;
 }
