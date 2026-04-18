@@ -32,6 +32,7 @@ public:
         rear->next = newnode;
         rear = newnode;
     }
+    // It is a Dequeue code
     int dequeue(){
         if(front == NULL){
             cout<<"QUEUE IS Empty";
@@ -56,6 +57,7 @@ public:
         cout<<endl<<"NULL"<<endl;
     }
 };
+// main
 
 int main(){
     Queue q;
