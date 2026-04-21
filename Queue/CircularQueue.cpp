@@ -55,13 +55,19 @@ public:
             cout<<"Queue is empty:\n";
             return;
         }
-        int i = 0;
-        while(i != r+1){
+        int i = f;
+        int count = 0;
+        while(count != currsize){
             cout<<arr[i]<<" ";
-            i++;
+            i = (i + 1) % capacity;
+            count++;
         }
         cout<<endl;
 
+    }
+
+    ~Queue(){
+        delete[] arr;
     }
 
 
@@ -81,6 +87,10 @@ int main(){
     q.printQueue();
 
     q.pop();
+    q.pop();
+    q.printQueue();
+    q.push(7);
+    q.push(8);
     q.printQueue();
 
 
