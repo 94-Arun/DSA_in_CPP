@@ -2,6 +2,7 @@
 #include<deque>
 using namespace std;
 
+// class
 class Stack{
     deque<int> deq;
 public:
