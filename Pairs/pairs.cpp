@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-
+// compare function 
 bool compare(pair<int,int> a,pair<int,int> b){
     return a.second < b.second;//ascending order
 }
