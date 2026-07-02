@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// fractional knapsackn
 void fractionalKapscack(vector<int> &val,vector<int> &wt,int weight){
     vector<pair<double,int>> ratio(val.size(),make_pair(0.0,0));
 
