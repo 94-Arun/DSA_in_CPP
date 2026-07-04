@@ -16,9 +16,9 @@ int indianCoins(int n){
     return ans;
 }
 
-
+// main
 int main(){
-    int n = 121;
+    int n = 141;
     cout<<"No. of Indian Coins Required : "<<indianCoins(n)<<endl;
 
 }
