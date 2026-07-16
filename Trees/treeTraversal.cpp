@@ -30,10 +30,49 @@ Node* buildTree(vector<int> node){
     return currnode;
 }
 
+// preorder
+void preorder(Node* root){
+    if(root == nullptr) return;
+
+    cout<<root->val<<" ";
+    preorder(root->left);
+    preorder(root->right);
+    
+}
+
+//postorder
+void postorder(Node* root){
+    if(root == nullptr) return;
+
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->val<<" ";
+    
+}
+
+//inorder
+void inorder(Node* root){
+    if(root == nullptr) return;
+
+    inorder(root->left);
+    cout<<root->val<<" ";
+    inorder(root->right);
+    
+    
+}
+
 // main
 int main(){
 vector<int> node = {1,2,3,-1,-1,4,-1,-1,5,6,-1,-1,-1};
 Node* root = buildTree(node);
-cout<<"Root Node : "<<root->val<<endl;
+// cout<<"Root Node : "<<root->val<<endl;
+
+preorder(root);
+cout<<endl;
+postorder(root);
+cout<<endl;
+inorder(root);
+cout<<endl;
+
     return 0;
 }
