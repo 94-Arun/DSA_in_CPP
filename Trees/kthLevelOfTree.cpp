@@ -42,7 +42,7 @@ void kthLevel(Node* root,int k){
     queue<Node*> q;
     q.push(root);
     q.push(NULL);
-    int c = 0;
+    int c = 1;
 
     while(!q.empty()){
         Node* curr = q.front();
@@ -74,7 +74,7 @@ vector<int> node = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
 Node* root = buildTree(node);
 // cout<<"Root Node : "<<root->val<<endl;
 
-kthLevel(root,2);
+kthLevel(root,3 );
 
 
     return 0;
