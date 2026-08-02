@@ -33,7 +33,7 @@ Node* buildTree(vector<int> node){
 
 
 
-// Level Order Traversal
+// kth level of a tree
 void kthLevel(Node* root,int k){
     if(root == NULL){
         return;
@@ -60,7 +60,7 @@ void kthLevel(Node* root,int k){
                 cout<<curr->val<<" ";
             }
             
-            if(curr->left != nullptr) q.push(curr->left);
+            if(curr->left != NULL) q.push(curr->left);
             if(curr->right != NULL) q.push(curr->right);
     }
         }
