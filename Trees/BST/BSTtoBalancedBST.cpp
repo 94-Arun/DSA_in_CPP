@@ -68,8 +68,8 @@ int main(){
     // }
 
 
-    Node* r = balanceBST(v,0,v.size()-1);
-    preorder(r);
+    root = balanceBST(v,0,v.size()-1);
+    preorder(root);
 
 } 
 
