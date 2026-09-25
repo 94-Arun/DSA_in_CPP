@@ -6,7 +6,7 @@ using namespace std;
 
 struct comparePair{
     bool operator () (pair<string,int> &p1,pair<string,int> &p2){
-        return p2.second > p1.second;
+        return p2.second < p1.second;
     }
 };
 
