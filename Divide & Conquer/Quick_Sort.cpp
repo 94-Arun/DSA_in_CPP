@@ -10,7 +10,7 @@ int Partion(vector<int> &arr, int si, int ei){
 
     while(j<ei){
         if(arr[j] < pivot){        
-            cout << ((i == j) ? "true" : "false") << endl;
+            // cout << ((i == j) ? "true" : "false") << endl;
             swap(arr[i],arr[j]);
             i++;
         }

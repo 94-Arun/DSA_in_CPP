@@ -15,11 +15,11 @@ struct Node{
 
 struct NodeValue{
 public:
-    int maxnode,minnode,maxsize;
+    int maxleft,minright,maxsize;
 
     NodeValue(int maxnode,int minnode,int maxsize ){
-        this->maxnode = maxnode;
-        this->minnode = minnode;
+        this->maxleft = maxnode;
+        this->minright = minnode;
         this->maxsize = maxsize;
     }
 };
@@ -33,8 +33,8 @@ NodeValue BSTinBT(Node* root){
     NodeValue right = BSTinBT(root->right);
 
     // if its Binary Tree
-    if(left.maxnode < root->val  && right.minnode > root->val){
-        return NodeValue(max(right.maxnode,root->val),min(left.minnode,root->val),left.maxsize + right.maxsize + 1);
+    if(left.maxleft < root->val  && right.minright > root->val){
+        return NodeValue(max(right.maxleft,root->val),min(left.minright,root->val),left.maxsize + right.maxsize + 1);
 
     }
     // if not a binary tree 
